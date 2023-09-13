@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>4thWall AI</title>
+
+</head>
+<body>
+    <div class="topBar">
+        <div class="topBarImg"> 
+            <img src="assets/sasuke.jpg" alt="Description of image">
+        </div>
+        4thWall
+    </div>
+
+    <div class="nameInfo">
+        <p class="name">Sasuke Uchiha</p>
+        <button class="infoBtn" id="info-btn" onclick="popUp();"><i class="fas fa-bars"></i></button>
+
+
+    </div>
+
+    <div class="chatContainer" id="chatContainer">
+            
+            <div class="chat-window" id="chat-window">
+                <!-- Initial chat message from Sofie -->
+                <div class="message bot">
+                    <p>Hi! My name is Sofi and I am a robot from NYC. I love to talk about life, cats, and the universe!</p>
+                </div>
+            </div>
+            
+           
+
+    </div>
+    <div class="storySummary" id="storySummary">
+        <h2>Chapter 1</h2>
+        Sasuke confronted his brother Itachi, who had massacred their family. They fiercely battled, with Sasuke believing he had defeated Itachi using a lightning-charged Kirin jutsu. However, Itachi's "death" was an illusion meant to advance Sasuke's Sharingan. The real battle ended with Itachi taking Sasuke's eyes, hinting at a tragic Uchiha destiny where siblings are fated to fight and usurp each other's powers.
+    </div>
+    
+
+    <div class="inputBar chat-input" id="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()" id="sendButton">
+            <i class="fas fa-caret-right"></i>
+        </button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
