@@ -22,7 +22,7 @@ body{
     
 }
 
-.topBar {
+/* .topBar {
     height: 60px;
     background-color: #161616;
     display: flex;
@@ -35,7 +35,22 @@ body{
     line-height: normal;
     text-align: right;
     align-items: center;
+} */
+.topBar {
+    height: 60px;
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes children with space between them */
+    color: #F2FAEF;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 20px; /* Some padding on the sides to prevent content sticking to the edge */
 }
+
 
 .topBarImg{
     width: 50px;
@@ -44,20 +59,20 @@ body{
     background: lightgray 50% / cover no-repeat;
     /* border:  1px solid #F2FAEF; */
     margin-left: 10px;
-    margin-right: 155px;
+    margin-right: 15px;
     display: flex;
 }
 
-.topBarImg img {
+/* .topBarImg img {
     width: 50px;
     height: auto;
     border-radius: 50px;
     border:  1px solid #F2FAEF;
-}
+} */
 
 
 .nameInfo {
-    height: 40px;
+    height: 60px;
     background-color: #1A2A6C;
     display: flex;
     flex: row;
@@ -69,24 +84,24 @@ body{
     line-height: normal;
     
 }
-
 .name{
     font-family: 'Naruto';
-    /* margin-left: 10px;
-    margin-top: 5px; */
-    /* height: 100%; */
+    font-size: 20px;
+    align-items: center;
+    
 }
 
-.infoBtn{
+.infoBtn {
     display: flex;
     border: none;
     cursor: pointer;
-    background-color:#1A2A6C ;
+    background-color: #1A2A6C;
     color: #A60C0C;
     align-items: center;
-    justify-content:center;
-    font-size: 30px;    
-    margin-left: 140px;
+    justify-content: center;
+    font-size: 30px;
+    margin-left: auto; /* Push the button to the right */
+    padding: 0 20px; /* Some padding to give it width */
 }
 
 
@@ -209,6 +224,7 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 4%;
     overflow-y: auto;
     margin-right: 4px;
     padding-left: 20px;
